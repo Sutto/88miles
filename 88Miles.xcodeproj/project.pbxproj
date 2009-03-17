@@ -28,13 +28,13 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B573D41B0F6F68B300E020F0 /* Preferences.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D41A0F6F68B300E020F0 /* Preferences.rb */; };
+		B573D4BA0F6F9D9A00E020F0 /* core_extensions.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D4AA0F6F9D9A00E020F0 /* core_extensions.rb */; };
+		B573D4BB0F6F9D9A00E020F0 /* eighty_eight_miles.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */; };
+		B573D4BC0F6F9D9A00E020F0 /* httparty in Resources */ = {isa = PBXBuildFile; fileRef = B573D4AC0F6F9D9A00E020F0 /* httparty */; };
+		B573D4BD0F6F9D9A00E020F0 /* httparty.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D4B90F6F9D9A00E020F0 /* httparty.rb */; };
 		B5ED5F290F6ED6C500235F8F /* GradientView.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5F280F6ED6C500235F8F /* GradientView.rb */; };
 		B5ED5FBF0F6EE6B400235F8F /* ApplicationDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5FBE0F6EE6B400235F8F /* ApplicationDelegate.rb */; };
 		B5ED5FF70F6EEBDE00235F8F /* 88miles.icns in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */; };
-		B5FEC1EF0F6EB5C200FF8886 /* core_extensions.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC1DC0F6EB5C200FF8886 /* core_extensions.rb */; };
-		B5FEC1F00F6EB5C200FF8886 /* eighty_eight_miles.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC1DD0F6EB5C200FF8886 /* eighty_eight_miles.rb */; };
-		B5FEC1F10F6EB5C200FF8886 /* httparty in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC1DE0F6EB5C200FF8886 /* httparty */; };
-		B5FEC1F20F6EB5C200FF8886 /* httparty.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC1EB0F6EB5C200FF8886 /* httparty.rb */; };
 		B5FEC2160F6EB6C300FF8886 /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC2150F6EB6C300FF8886 /* ApplicationController.rb */; };
 /* End PBXBuildFile section */
 
@@ -51,13 +51,13 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* 88Miles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 88Miles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B573D41A0F6F68B300E020F0 /* Preferences.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Preferences.rb; sourceTree = "<group>"; };
+		B573D4AA0F6F9D9A00E020F0 /* core_extensions.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = core_extensions.rb; sourceTree = "<group>"; };
+		B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = eighty_eight_miles.rb; sourceTree = "<group>"; };
+		B573D4AC0F6F9D9A00E020F0 /* httparty */ = {isa = PBXFileReference; lastKnownFileType = folder; path = httparty; sourceTree = "<group>"; };
+		B573D4B90F6F9D9A00E020F0 /* httparty.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = httparty.rb; sourceTree = "<group>"; };
 		B5ED5F280F6ED6C500235F8F /* GradientView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = GradientView.rb; sourceTree = "<group>"; };
 		B5ED5FBE0F6EE6B400235F8F /* ApplicationDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationDelegate.rb; sourceTree = "<group>"; };
 		B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = 88miles.icns; path = ../../../Documents/88miles.icns; sourceTree = SOURCE_ROOT; };
-		B5FEC1DC0F6EB5C200FF8886 /* core_extensions.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = core_extensions.rb; path = "../../OSS/88miles-client/lib/core_extensions.rb"; sourceTree = SOURCE_ROOT; };
-		B5FEC1DD0F6EB5C200FF8886 /* eighty_eight_miles.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = eighty_eight_miles.rb; path = "../../OSS/88miles-client/lib/eighty_eight_miles.rb"; sourceTree = SOURCE_ROOT; };
-		B5FEC1DE0F6EB5C200FF8886 /* httparty */ = {isa = PBXFileReference; lastKnownFileType = folder; name = httparty; path = "../../OSS/88miles-client/lib/httparty"; sourceTree = SOURCE_ROOT; };
-		B5FEC1EB0F6EB5C200FF8886 /* httparty.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = httparty.rb; path = "../../OSS/88miles-client/lib/httparty.rb"; sourceTree = SOURCE_ROOT; };
 		B5FEC2150F6EB6C300FF8886 /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationController.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,11 +136,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B573D4AA0F6F9D9A00E020F0 /* core_extensions.rb */,
+				B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */,
+				B573D4AC0F6F9D9A00E020F0 /* httparty */,
+				B573D4B90F6F9D9A00E020F0 /* httparty.rb */,
 				B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */,
-				B5FEC1DC0F6EB5C200FF8886 /* core_extensions.rb */,
-				B5FEC1DD0F6EB5C200FF8886 /* eighty_eight_miles.rb */,
-				B5FEC1DE0F6EB5C200FF8886 /* httparty */,
-				B5FEC1EB0F6EB5C200FF8886 /* httparty.rb */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -204,15 +204,15 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
-				B5FEC1EF0F6EB5C200FF8886 /* core_extensions.rb in Resources */,
-				B5FEC1F00F6EB5C200FF8886 /* eighty_eight_miles.rb in Resources */,
-				B5FEC1F10F6EB5C200FF8886 /* httparty in Resources */,
-				B5FEC1F20F6EB5C200FF8886 /* httparty.rb in Resources */,
 				B5FEC2160F6EB6C300FF8886 /* ApplicationController.rb in Resources */,
 				B5ED5F290F6ED6C500235F8F /* GradientView.rb in Resources */,
 				B5ED5FBF0F6EE6B400235F8F /* ApplicationDelegate.rb in Resources */,
 				B5ED5FF70F6EEBDE00235F8F /* 88miles.icns in Resources */,
 				B573D41B0F6F68B300E020F0 /* Preferences.rb in Resources */,
+				B573D4BA0F6F9D9A00E020F0 /* core_extensions.rb in Resources */,
+				B573D4BB0F6F9D9A00E020F0 /* eighty_eight_miles.rb in Resources */,
+				B573D4BC0F6F9D9A00E020F0 /* httparty in Resources */,
+				B573D4BD0F6F9D9A00E020F0 /* httparty.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
