@@ -8,21 +8,17 @@
 
 class ApplicationController
   
-  def initialize
-    NSApp.delegate = ApplicationDelegate.new
-  end
-  
   # Windows
   attr_accessor :mainWindow, :preferencesWindow
   
   # Controls
-  attr_accessor :controlButton, :timerLabel, :usernameField, :passwordField, :projectsList, :clockOutWindow, :logMessage, :tagsField
+  attr_accessor :controlButton, :timerLabel, :usernameField, :passwordField, :projectsList, :clockOutWindow, :logMessage, :tagsField, :timeZoneField
   
   # Data
   attr_accessor :apiAccess, :hasCredentials, :timer
   
   # Timer Tracker
-  attr_accessor :startTime
+  attr_accessor :startTime, :timeZones
   
   # View Trackers
   attr_accessor :upperGradient, :middleGradient, :lowerGradient
@@ -30,6 +26,7 @@ class ApplicationController
   def showPreferences(sender)
     usernameField.stringValue = Preferences.username.to_s
     passwordField.stringValue = Preferences.password.to_s
+    timeZoneField.selectItemWithTitle(@timeZones.invert[currentTimeZone])
     NSApp.beginSheet(preferencesWindow, modalForWindow: mainWindow, modalDelegate: self, didEndSelector: "sheetDidClose:withCode:andEventContext:", contextInfo: nil)
   end
   
@@ -41,6 +38,8 @@ class ApplicationController
   end
   
   def showClockOutDialog
+    logMessage.stringValue = ""
+    tagsField.stringValue  = ""
     NSApp.beginSheet(clockOutWindow, modalForWindow: mainWindow, modalDelegate: self, didEndSelector: "sheetDidClose:withCode:andEventContext:", contextInfo: nil)
   end
   
@@ -61,6 +60,13 @@ class ApplicationController
   end
   
   def awakeFromNib
+    @timeZones = {}
+    NSTimeZone.knownTimeZoneNames.each do |zone_name|
+      english_name = zone_name.gsub("_", " ").split("/").join(" - ")
+      @timeZones[english_name] = zone_name
+    end
+    timeZoneField.removeAllItems
+    timeZoneField.addItemsWithTitles(@timeZones.keys.sort)
     projectsList.removeAllItems
     updateAuth! if !hasCredentials
     startTimer if @clockedIn
@@ -130,7 +136,7 @@ class ApplicationController
       begin
         self.setHasCredentials true
         projectsList.enabled = false unless projectsList.nil?
-        self.setApiAccess EightyEightMiles.new(username, password)
+        self.setApiAccess EightyEightMiles.new(username, password, currentTimeZone)
         NSLog("Reloading Drop Down Data!")
         unless projectsList.nil?
           updateProjectsList
@@ -168,6 +174,10 @@ class ApplicationController
     else
       return true
     end
+  end
+  
+  def updateTimeZonePreference(sender)
+    Preferences.time_zone = @timeZones[timeZoneField.titleOfSelectedItem]
   end
   
   protected
@@ -213,6 +223,10 @@ class ApplicationController
     alert = NSAlert.alertWithMessageText(text, defaultButton: "ok", alternateButton: nil, otherButton: nil, informativeTextWithFormat: "")
     alert.alertStyle = NSWarningAlertStyle
     alert.beginSheetModalForWindow(mainWindow, modalDelegate: self, didEndSelector: nil, contextInfo: nil)
+  end
+  
+  def currentTimeZone
+    Preferences.time_zone ||= NSTimeZone.localTimeZone.name
   end
 
 end

@@ -32,11 +32,26 @@
 		B573D4BB0F6F9D9A00E020F0 /* eighty_eight_miles.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */; };
 		B573D4BC0F6F9D9A00E020F0 /* httparty in Resources */ = {isa = PBXBuildFile; fileRef = B573D4AC0F6F9D9A00E020F0 /* httparty */; };
 		B573D4BD0F6F9D9A00E020F0 /* httparty.rb in Resources */ = {isa = PBXBuildFile; fileRef = B573D4B90F6F9D9A00E020F0 /* httparty.rb */; };
+		B589332B0F6FC01E00F0A95F /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B589332A0F6FC01E00F0A95F /* BWToolkitFramework.framework */; };
+		B58933320F6FC02500F0A95F /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B589332A0F6FC01E00F0A95F /* BWToolkitFramework.framework */; };
+		B58934060F70A35A00F0A95F /* 88Miles.icns in Resources */ = {isa = PBXBuildFile; fileRef = B58934050F70A35A00F0A95F /* 88Miles.icns */; };
 		B5ED5F290F6ED6C500235F8F /* GradientView.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5F280F6ED6C500235F8F /* GradientView.rb */; };
 		B5ED5FBF0F6EE6B400235F8F /* ApplicationDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5FBE0F6EE6B400235F8F /* ApplicationDelegate.rb */; };
-		B5ED5FF70F6EEBDE00235F8F /* 88miles.icns in Resources */ = {isa = PBXBuildFile; fileRef = B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */; };
 		B5FEC2160F6EB6C300FF8886 /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = B5FEC2150F6EB6C300FF8886 /* ApplicationController.rb */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B573D5380F6FAF1500E020F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B58933320F6FC02500F0A95F /* BWToolkitFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -55,9 +70,10 @@
 		B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = eighty_eight_miles.rb; sourceTree = "<group>"; };
 		B573D4AC0F6F9D9A00E020F0 /* httparty */ = {isa = PBXFileReference; lastKnownFileType = folder; path = httparty; sourceTree = "<group>"; };
 		B573D4B90F6F9D9A00E020F0 /* httparty.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = httparty.rb; sourceTree = "<group>"; };
+		B589332A0F6FC01E00F0A95F /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = ../../../Desktop/BWToolkitFramework.framework; sourceTree = SOURCE_ROOT; };
+		B58934050F70A35A00F0A95F /* 88Miles.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = 88Miles.icns; sourceTree = "<group>"; };
 		B5ED5F280F6ED6C500235F8F /* GradientView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = GradientView.rb; sourceTree = "<group>"; };
 		B5ED5FBE0F6EE6B400235F8F /* ApplicationDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationDelegate.rb; sourceTree = "<group>"; };
-		B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = 88miles.icns; path = ../../../Documents/88miles.icns; sourceTree = SOURCE_ROOT; };
 		B5FEC2150F6EB6C300FF8886 /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationController.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +84,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
+				B589332B0F6FC01E00F0A95F /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +105,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B589332A0F6FC01E00F0A95F /* BWToolkitFramework.framework */,
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -136,11 +154,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B58934050F70A35A00F0A95F /* 88Miles.icns */,
 				B573D4AA0F6F9D9A00E020F0 /* core_extensions.rb */,
 				B573D4AB0F6F9D9A00E020F0 /* eighty_eight_miles.rb */,
 				B573D4AC0F6F9D9A00E020F0 /* httparty */,
 				B573D4B90F6F9D9A00E020F0 /* httparty.rb */,
-				B5ED5FF60F6EEBDE00235F8F /* 88miles.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -167,6 +185,8 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				B573D5380F6FAF1500E020F0 /* CopyFiles */,
+				B589340A0F70A38E00F0A95F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,12 +227,12 @@
 				B5FEC2160F6EB6C300FF8886 /* ApplicationController.rb in Resources */,
 				B5ED5F290F6ED6C500235F8F /* GradientView.rb in Resources */,
 				B5ED5FBF0F6EE6B400235F8F /* ApplicationDelegate.rb in Resources */,
-				B5ED5FF70F6EEBDE00235F8F /* 88miles.icns in Resources */,
 				B573D41B0F6F68B300E020F0 /* Preferences.rb in Resources */,
 				B573D4BA0F6F9D9A00E020F0 /* core_extensions.rb in Resources */,
 				B573D4BB0F6F9D9A00E020F0 /* eighty_eight_miles.rb in Resources */,
 				B573D4BC0F6F9D9A00E020F0 /* httparty in Resources */,
 				B573D4BD0F6F9D9A00E020F0 /* httparty.rb in Resources */,
+				B58934060F70A35A00F0A95F /* 88Miles.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +240,19 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		B573D3B20F6EF35700E020F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=\"$PATH:/usr/local/bin\" /usr/bin/env macruby -r hotcocoa/application_builder -e \"HotCocoa::ApplicationBuilder.deploy(ARGV[0])\" $TARGET_BUILD_DIR/$PROJECT_NAME.app";
+		};
+		B589340A0F70A38E00F0A95F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,6 +323,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					/Volumes/APOLLO/BKP_Downloads/BWToolkit,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -307,6 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					/Volumes/APOLLO/BKP_Downloads/BWToolkit,
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
